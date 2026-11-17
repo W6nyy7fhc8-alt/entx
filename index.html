@@ -113,15 +113,16 @@
     .ch.hot .tx p { color: var(--green); }
     .hot-tag { position: absolute; top: -8px; right: 12px; font-size: 10px; font-weight: 700;
       color: #062006; background: var(--green); border-radius: 999px; padding: 3px 9px; letter-spacing: 1px; }
+    .ch.full { grid-column: 1 / -1; margin-top: 8px; }
     .dl-note { text-align: center; color: var(--gray); font-size: 12px; margin-top: 14px; }
 
     /* ============ 手机样机 ============ */
-    .showcase { margin-top: 40px; display: flex; align-items: center; gap: 24px; }
-    .showcase .copy { flex: 1; }
+    .showcase { margin-top: 40px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .showcase .copy { width: 100%; max-width: 340px; }
     .showcase .copy h3 { font-size: 18px; font-weight: 800; letter-spacing: 1.5px; line-height: 1.5; }
     .showcase .copy h3 em { font-style: normal; color: var(--green); }
     .showcase .copy p { margin-top: 10px; font-size: 12.5px; color: var(--gray); line-height: 1.8; }
-    .phone { flex: none; width: 128px; height: 246px; border-radius: 22px;
+    .phone { flex: none; width: 132px; height: 252px; border-radius: 22px;
       border: 1px solid rgba(255,255,255,.14); background: #060809; position: relative;
       box-shadow: 0 20px 50px rgba(0,0,0,.6), 0 0 40px rgba(0,255,0,.08); padding: 8px; }
     .phone::before { content: ""; position: absolute; top: 12px; left: 50%; transform: translateX(-50%);
@@ -292,8 +293,7 @@
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M8 3h8l4 7-8 11L4 10z"/></svg></div>
           <div class="tx"><p>OPPO / vivo</p><span>ColorOS · OriginOS</span></div>
         </a>
-      </div>
-        <a class="ch" id="ch5" href="./entx-ios-anim.mobileconfig">
+        <a class="ch full" id="ch5" href="./entx-ios-anim.mobileconfig">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></div>
           <div class="tx"><p>iPhone / iOS</p><span>描述文件安装 · Safari 打开</span></div>
         </a>
